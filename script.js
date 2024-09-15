@@ -1,9 +1,8 @@
-function drawOmikuji() {
-  // S1: おみくじの結果をオブジェクトで格納（画像URLを含む）
+import { omikujiResults } from './omikujiData.js';
+import { drawOmikuji } from './drawOmikuji.js';
+import { resetOmikuji } from './resetOmikuji.js';
 
-  // S2: ランダムにインデックスを選択
+// drawOmikuji関数をボタンにバインド
 
-  // S3: 案内画像を非表示にする
+// resetOmikuji関数をボタンにバインド
 
-  // S4: 結果を表示
-}
