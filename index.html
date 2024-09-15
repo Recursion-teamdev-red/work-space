@@ -18,7 +18,7 @@
       <img id="guide-image" src="assets/image_omijikuji.png" alt="案内画像" class="img-fluid mb-4" />
 
       <!-- おみくじボタン -->
-      <button class="btn btn-primary btn-lg mb-4" onclick="drawOmikuji()">おみくじを引く</button>
+      <button id="draw-button" class="btn btn-primary btn-lg mb-4">おみくじを引く</button>
 
       <!-- 結果の表示領域 -->
       <div class="alert alert-info result" id="fortune" style="display: none"></div>
@@ -26,12 +26,19 @@
 
       <!-- おみくじ結果画像 -->
       <img id="omikuji-image" src="" alt="おみくじの画像" class="img-fluid" style="display: none" />
+
+      <!-- "もう一度おみくじを引く" ボタン -->
+      <button id="reset-button" class="btn btn-secondary btn-lg mt-4" style="display: none">
+        もう一度おみくじを引く
+      </button>
     </div>
 
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
+
+    <!-- script.js を jsフォルダから読み込む -->
+    <script type="module" src="./js/script.js"></script>
   </body>
 </html>

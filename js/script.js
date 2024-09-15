@@ -5,4 +5,3 @@ import { resetOmikuji } from './resetOmikuji.js';
 // drawOmikuji関数をボタンにバインド
 
 // resetOmikuji関数をボタンにバインド
-
