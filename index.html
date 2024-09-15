@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>おみくじアプリ</title>
+    
+    <!-- Bootstrap CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="d-flex flex-column justify-content-center align-items-center">
+
+    <div class="container text-center">
+        <h1 class="mt-4">おみくじアプリ</h1>
+        <p class="lead">ボタンをクリックしておみくじを引いてみましょう！</p>
+
+        <!-- 案内画像 -->
+        <img id="guide-image" src="https://example.com/guide.png" alt="案内画像" class="img-fluid mb-4">
+
+        <!-- おみくじボタン -->
+        <button class="btn btn-primary btn-lg mb-4" onclick="drawOmikuji()">おみくじを引く</button>
+        
+        <!-- 結果の表示領域 -->
+        <div class="alert alert-info result" id="fortune" style="display: none;"></div>
+        <div class="alert alert-warning result" id="advice" style="display: none;"></div>
+
+        <!-- おみくじ結果画像 -->
+        <img id="omikuji-image" src="" alt="おみくじの画像" class="img-fluid" style="display: none;">
+
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
