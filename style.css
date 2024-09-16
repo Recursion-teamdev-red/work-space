@@ -1,11 +1,11 @@
 html,
 body {
-  height: 100%; /* 高さを100%に設定 */
-  margin: 0; /* マージンをリセット */
-  padding: 0; /* パディングをリセット */
-  font-family: Arial, sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Han Serif', 'Hiragino Mincho', 'Yu Mincho', serif; /* 達筆な日本語フォントファミリーを指定 */
   background: linear-gradient(to bottom, #ffeecd, #facdb7);
-  background-size: cover; /* 画面いっぱいに背景を広げる */
+  background-size: cover;
 }
 
 body {
