@@ -11,14 +11,15 @@
   </head>
   <body class="d-flex flex-column justify-content-center align-items-center">
     <div class="container text-center">
-      <h1 class="mt-4">おみくじアプリ</h1>
-      <p class="lead">ボタンをクリックしておみくじを引いてみましょう！</p>
+      <h1 class="mt-4 title-highlight">ソフトウェア開発おみくじ</h1>
 
-      <!-- 案内画像 -->
-      <img id="guide-image" src="assets/image_omijikuji.png" alt="案内画像" class="img-fluid mb-4" />
+      <div class="d-flex flex-column align-items-center">
+        <!-- 案内画像 -->
+        <img id="guide-image" src="assets/image_omijikuji.png" alt="案内画像" class="img-fluid mb-4" />
 
-      <!-- おみくじボタン -->
-      <button id="draw-button" class="btn btn-primary btn-lg mb-4">おみくじを引く</button>
+        <!-- おみくじボタン -->
+        <button id="draw-button" class="btn btn-lg mb-4 btn-custom">おみくじを引く</button>
+      </div>
 
       <!-- 結果の表示領域 -->
       <div class="alert alert-info result" id="fortune" style="display: none"></div>
