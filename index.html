@@ -11,7 +11,7 @@
   </head>
   <body class="d-flex flex-column justify-content-center align-items-center">
     <div class="container text-center">
-      <h1 class="mt-4 title-highlight">ソフトウェア開発おみくじ</h1>
+      <h1 class="mt-4 title-highlight">ソフトウェア開発<br />おみくじ</h1>
 
       <div class="d-flex flex-column align-items-center">
         <!-- 案内画像 -->
@@ -19,19 +19,37 @@
 
         <!-- おみくじボタン -->
         <button id="draw-button" class="btn btn-lg mb-4 btn-custom">おみくじを引く</button>
+        <!-- 結果の表示領域 -->
+        <div class="result-container" id="result-container" style="display: none">
+          <img id="omikuji-image" src="" alt="おみくじの画像" class="img-fluid" style="display: none" />
+          <div class="result-item">
+            <div id="fortune" style="display: none"></div>
+          </div>
+
+          <div class="result-item ">
+            <div id="advice" style="display: none"></div>
+          </div>
+
+          <div class="result-item">
+            <label for="language">ラッキー言語:</label>
+            <div id="language" style="display: none"></div>
+          </div>
+
+          <div class="result-item">
+            <label for="database">ラッキーデータベース:</label>
+            <div id="database" style="display: none"></div>
+          </div>
+
+          <div class="result-item">
+            <label for="editor">ラッキーエディタ:</label>
+            <div id="editor" style="display: none"></div>
+          </div>
+        </div>
+
+        <button id="reset-button" class="btn btn-lg mb-4 btn-custom" style="display: none">
+          もう一度おみくじを引く
+        </button>
       </div>
-
-      <!-- 結果の表示領域 -->
-      <div class="alert alert-info result" id="fortune" style="display: none"></div>
-      <div class="alert alert-warning result" id="advice" style="display: none"></div>
-
-      <!-- おみくじ結果画像 -->
-      <img id="omikuji-image" src="" alt="おみくじの画像" class="img-fluid" style="display: none" />
-
-      <!-- "もう一度おみくじを引く" ボタン -->
-      <button id="reset-button" class="btn btn-secondary btn-lg mt-4" style="display: none">
-        もう一度おみくじを引く
-      </button>
     </div>
 
     <!-- Bootstrap JS and dependencies -->
