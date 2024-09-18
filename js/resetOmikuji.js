@@ -15,6 +15,6 @@ function hideResult(fortuneEle,adviceEle,imageEle,guideImage,omikujiButton,reset
   adviceEle.style.display = "none";
   imageEle.style.display = "none";
   guideImage.style.display = "block";
-  omikujiButton.style.display = "block";
+  omikujiButton.style.display = "inline-block";
   resetButton.style.display = "none";
 }
