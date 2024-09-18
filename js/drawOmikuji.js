@@ -15,9 +15,8 @@ export function drawOmikuji() {
   // 案内画像とおみくじボタンを非表示にし、リセットボタンを表示
   const guideImage = document.getElementById('guide-image');
   const omikujiButton = document.getElementById('draw-button');
-  const lead = document.querySelector('.lead');
   const resetButton = document.getElementById('reset-button');
-  showResult(fortuneEle,adviceEle,imageEle,guideImage,omikujiButton,lead,resetButton);
+  showResult(fortuneEle,adviceEle,imageEle,guideImage,omikujiButton,resetButton);
 
 }
 
@@ -38,12 +37,11 @@ function fillInResult(omikujiResult,fortuneEle,adviceEle,imageEle) {
   imageEle.src = omikujiResult.image;
 }
 
-function showResult(fortuneEle,adviceEle,imageEle,guideImage,omikujiButton,lead,resetButton) {
+function showResult(fortuneEle,adviceEle,imageEle,guideImage,omikujiButton,resetButton) {
   fortuneEle.style.display = "block";
   adviceEle.style.display = "block";
   imageEle.style.display = "block";
   guideImage.style.display = "none";
   omikujiButton.style.display = "none";
-  lead.style.display = "none";
   resetButton.style.display = "block";
 }
