@@ -1,20 +1,63 @@
+html,
 body {
-    font-family: Arial, sans-serif;
-    margin-top: 50px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Han Serif', 'Hiragino Mincho', 'Yu Mincho', serif; /* 達筆な日本語フォントファミリーを指定 */
+  background: linear-gradient(to bottom, #ffeecd, #facdb7);
+  background-size: cover;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
 }
 
 .result {
-    font-size: 1.5em;
-    margin-top: 20px;
+  font-size: 1.5em;
+  margin-top: 20px;
 }
 
 #guide-image {
-    width: 200px;
-    height: auto;
+  width: 200px;
+  height: auto;
 }
 
 img {
-    margin-top: 20px;
-    width: 200px;
-    height: auto;
+  margin-top: 20px;
+  width: 200px;
+  height: auto;
+}
+
+.title-highlight {
+  color: #dc3444;
+}
+
+.btn-custom {
+  background-color: #dc3444;
+  border-color: #dc3444;
+  border-radius: 1rem;
+  color: #ffffff;
+}
+
+.btn-custom:active {
+  background-color: #dc3444 !important;
+  border-color: #dc3444 !important;
+}
+
+.btn-custom:hover {
+  background-color: #d6000f;
+  border-color: #d6000f;
+}
+
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active {
+  color: #ffffff; /* ホバー時やクリック時も文字色を白くする */
 }
