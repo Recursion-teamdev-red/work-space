@@ -34,7 +34,7 @@ body {
 }
 
 .custom-container {
-  max-height: 70vh; /* 画面の高さの70%までの最大高さを指定 */
+  max-height: 70vh;
   overflow-y: auto;
 }
 
@@ -46,11 +46,6 @@ body {
   padding: 15px;
 
   color: #dc3444;
-  /* スクロール関連の追加スタイル */
-  /* max-height: 800px; */
-
-  /* height: 70vh; */
-  /* overflow-y: auto; */
 }
 
 .result-item {
