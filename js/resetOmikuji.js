@@ -1,6 +1,7 @@
 export function resetOmikuji() {
   // 結果表示エリアを非表示
   // 案内画像とおみくじボタンを再表示し、リセットボタンを非表示
+  const omikujiAreaEle = document.getElementById('omikuji-container');
   const resultAreaEle = document.getElementById('result-container');
   const fortuneEle = document.getElementById('fortune');
   const adviceEle = document.getElementById('advice');
@@ -12,6 +13,7 @@ export function resetOmikuji() {
   const omikujiButton = document.getElementById('draw-button');
   const resetButton = document.getElementById('reset-button');
   hideResult(
+    omikujiAreaEle,
     resultAreaEle,
     fortuneEle,
     adviceEle,
@@ -26,6 +28,7 @@ export function resetOmikuji() {
 }
 
 function hideResult(
+  omikujiAreaEle,
   resultAreaEle,
   fortuneEle,
   adviceEle,
@@ -37,6 +40,7 @@ function hideResult(
   omikujiButton,
   resetButton
 ) {
+  omikujiAreaEle.style.display = 'none';
   resultAreaEle.style.display = 'none';
   fortuneEle.style.display = 'none';
   adviceEle.style.display = 'none';

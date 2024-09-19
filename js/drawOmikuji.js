@@ -6,6 +6,7 @@ export function drawOmikuji() {
   const omikujiResult = omikujiResults[randomindex];
 
   // 結果を表示
+  const omikujiAreaEle = document.getElementById('omikuji-container');
   const resultAreaEle = document.getElementById('result-container');
   const fortuneEle = document.getElementById('fortune');
   const adviceEle = document.getElementById('advice');
@@ -15,10 +16,13 @@ export function drawOmikuji() {
   const imageEle = document.getElementById('omikuji-image');
   fillInResult(omikujiResult, fortuneEle, adviceEle, languageEle, databaseEle, editorEle, imageEle);
 
+  const title = document.getElementById('title');
   const guideImage = document.getElementById('guide-image');
   const omikujiButton = document.getElementById('draw-button');
   const resetButton = document.getElementById('reset-button');
   showResult(
+    title,
+    omikujiAreaEle,
     resultAreaEle,
     fortuneEle,
     adviceEle,
@@ -47,6 +51,8 @@ function fillInResult(omikujiResult, fortuneEle, adviceEle, languageEle, databas
 }
 
 function showResult(
+  title,
+  omikujiAreaEle,
   resultAreaEle,
   fortuneEle,
   adviceEle,
@@ -58,6 +64,7 @@ function showResult(
   omikujiButton,
   resetButton
 ) {
+  omikujiAreaEle.style.display = 'block';
   resultAreaEle.style.display = 'block';
   fortuneEle.style.display = 'block';
   adviceEle.style.display = 'block';
@@ -65,6 +72,7 @@ function showResult(
   databaseEle.style.display = 'block';
   editorEle.style.display = 'block';
   imageEle.style.display = 'inline-block';
+  title.style.display = 'none';
   guideImage.style.display = 'none';
   omikujiButton.style.display = 'none';
   resetButton.style.display = 'block';

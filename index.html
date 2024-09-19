@@ -11,44 +11,53 @@
   </head>
   <body class="d-flex flex-column justify-content-center align-items-center">
     <div class="container text-center">
-      <h1 class="mt-4 title-highlight">ソフトウェア開発<br />おみくじ</h1>
+      <h1 id="title" class="mt-4 title-highlight">ソフトウェア開発<br />おみくじ</h1>
 
-      <div class="d-flex flex-column align-items-center">
+      <div class="d-flex flex-column align-items-center custom-container">
         <!-- 案内画像 -->
         <img id="guide-image" src="assets/image_omijikuji.png" alt="案内画像" class="img-fluid mb-4" />
 
         <!-- おみくじボタン -->
         <button id="draw-button" class="btn btn-lg mb-4 btn-custom">おみくじを引く</button>
-        <!-- 結果の表示領域 -->
-        <div class="result-container" id="result-container" style="display: none">
-          <img id="omikuji-image" src="" alt="おみくじの画像" class="img-fluid" style="display: none" />
-          <div class="result-item">
-            <div id="fortune" style="display: none"></div>
-          </div>
 
-          <div class="result-item ">
-            <div id="advice" style="display: none"></div>
-          </div>
+        <div class="vh-100 d-flex justify-content-center align-items-center flex-column d-none">
+          <!-- 結果の表示領域 -->
+          <div id="omikuji-container" class="overflow-scroll p-2" style="display: none">
+            <div
+              class="result-container bg-white d-flex justify-content-start align-items-center flex-column my-3"
+              id="result-container"
+              style="display: none"
+            >
+              <h1 id="" class="mt-4 title-highlight">ソフトウェア開発おみくじ</h1>
+              <img id="omikuji-image" src="" alt="おみくじの画像" class="img-fluid" style="display: none" />
+              <div class="result-item">
+                <div id="fortune" style="display: none"></div>
+              </div>
 
-          <div class="result-item">
-            <label for="language">ラッキー言語:</label>
-            <div id="language" style="display: none"></div>
-          </div>
+              <div class="result-item">
+                <div id="advice" style="display: none"></div>
+              </div>
 
-          <div class="result-item">
-            <label for="database">ラッキーデータベース:</label>
-            <div id="database" style="display: none"></div>
-          </div>
+              <div class="result-item">
+                <label for="language">ラッキー言語:</label>
+                <div id="language" style="display: none"></div>
+              </div>
 
-          <div class="result-item">
-            <label for="editor">ラッキーエディタ:</label>
-            <div id="editor" style="display: none"></div>
+              <div class="result-item">
+                <label for="database">ラッキーデータベース:</label>
+                <div id="database" style="display: none"></div>
+              </div>
+
+              <div class="result-item">
+                <label for="editor">ラッキーエディタ:</label>
+                <div id="editor" style="display: none"></div>
+              </div>
+              <button id="reset-button" class="btn btn-lg mb-4 btn-custom" style="display: none">
+                もう一度おみくじを引く
+              </button>
+            </div>
           </div>
         </div>
-
-        <button id="reset-button" class="btn btn-lg mb-4 btn-custom" style="display: none">
-          もう一度おみくじを引く
-        </button>
       </div>
     </div>
 
