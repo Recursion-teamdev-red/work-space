@@ -6,7 +6,7 @@
 
 html,
 body {
-  height: 100%;
+  height: 100vh;
   margin: 0;
   padding: 0;
   font-family: 'Source Han Serif', 'Hiragino Mincho', 'Yu Mincho', serif;
@@ -42,13 +42,14 @@ body {
   text-align: center;
   font-size: 1.5em;
   margin-top: 20px;
-
-  font-size: 1.5em;
-  margin-top: 20px;
   border: 5px solid #dc3444;
   padding: 15px;
 
   color: #dc3444;
+
+  /* スクロール関連の追加スタイル */
+  max-height: 600px;
+  overflow-y: auto;
 }
 
 .result-item {
