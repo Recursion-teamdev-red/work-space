@@ -1,9 +1,15 @@
-html,
-body {
-  height: 100%;
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Source Han Serif', 'Hiragino Mincho', 'Yu Mincho', serif; /* 達筆な日本語フォントファミリーを指定 */
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Han Serif', 'Hiragino Mincho', 'Yu Mincho', serif;
   background: linear-gradient(to bottom, #ffeecd, #facdb7);
   background-size: cover;
 }
@@ -15,18 +21,51 @@ body {
 }
 
 .container {
+  width: 500px;
   text-align: center;
+  padding: 20px;
+  font-size: 0.5em;
+}
+
+#guide-image,
+#omikuji-image {
+  width: 200px;
+  height: auto;
+}
+
+.custom-container {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.result-container {
+  width: 200px;
+  font-size: 1.5em;
+  margin-top: 20px;
+  border: 5px solid #dc3444;
+  padding: 15px;
+
+  color: #dc3444;
+}
+
+.result-item {
+  border-bottom: 1px solid #dc3444;
   padding: 20px;
 }
 
-.result {
-  font-size: 1.5em;
-  margin-top: 20px;
+.result-item:last-child {
+  border-bottom: none;
+  margin-bottom: none;
 }
 
-#guide-image {
-  width: 200px;
-  height: auto;
+.result-item label {
+  font-weight: bold;
+  display: block;
+}
+
+.result-item div,
+.result-item img {
+  margin-top: 5px;
 }
 
 img {
@@ -59,5 +98,13 @@ img {
 .btn-custom:hover,
 .btn-custom:focus,
 .btn-custom:active {
-  color: #ffffff; /* ホバー時やクリック時も文字色を白くする */
+  color: #ffffff;
+}
+
+#reset-button {
+  margin-top: 20px;
+}
+
+#fortune {
+  font-size: 2.5em;
 }
